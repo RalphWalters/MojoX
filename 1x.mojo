@@ -1,0 +1,10 @@
+# factor and x defined at runtime
+def multiplier(factor:Int , x:Int)->Int:
+    return x*factor
+
+def main():
+    # these variables call the function with runtime arguments
+    var three_times_ten = times_ten(10 , 3)
+    var ten_times_ten = times_ten(10 , 10)
+    print("three times ten" , three_times_ten)
+    print("ten times ten" , ten_times_ten)
