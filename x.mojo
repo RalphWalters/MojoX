@@ -12,7 +12,7 @@ def main():
     var x:Float16 = 0
     print(x)
 
-    comptime if has_accelerator:
+    comptime if has_accelerator():
         print("GPU path")
     else:
         # GPU branch never compiled into the binary
