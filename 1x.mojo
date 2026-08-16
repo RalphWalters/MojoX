@@ -7,7 +7,7 @@ def main():
     comptime times_ten = multiplier[10]
 
     # these variables call the function with runtime arguments
-    var three_times_ten = multiplier(10 , 3)
-    var ten_times_ten = multiplier(10 , 10)
+    var three_times_ten = multiplier(3)
+    var ten_times_ten = multiplier(10)
     print("three times ten" , three_times_ten)
     print("ten times ten" , ten_times_ten)
