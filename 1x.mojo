@@ -1,8 +1,11 @@
 # factor and x defined at runtime
-def multiplier(factor:Int , x:Int)->Int:
+def multiplier[factor:Int](x:Int)->Int:
     return x*factor
 
 def main():
+    # times_ten a specialized function defined at compile time
+    comptime times_ten = multiplier[10]
+
     # these variables call the function with runtime arguments
     var three_times_ten = multiplier(10 , 3)
     var ten_times_ten = multiplier(10 , 10)
